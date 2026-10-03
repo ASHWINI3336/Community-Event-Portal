@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Management Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <h2 class="logo">
+            Community Event
+        </h2>
+
+        <ul class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#events">Events</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#register">Register</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Welcome To Community Event Portal</h1>
+
+<p>
+
+Discover amazing events happening around you.
+
+Register instantly and become a part of your community.
+
+</p>
+
+<a href="#events">
+
+<button>
+
+Explore Events
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="search">
+
+<h2>Search Event</h2>
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Search Event Name..."
+
+onkeyup="searchEvent()"
+
+>
+
+</section>
+
+
+
+<section class="events" id="events">
+
+<h2>Upcoming Events</h2>
+
+<div class="event-container" id="eventContainer">
+
+<div class="event-card">
+
+<img src="https://images.stockcake.com/public/2/c/7/2c7f5320-3714-4f5b-a282-edf4cdfa1bf8_large/outdoor-music-festival-stockcake.jpg">
+
+<h3>Music Festival</h3>
+
+<p>Date : 22 July 2026</p>
+
+<p>Location : Pune</p>
+
+<button onclick="selectEvent('Music Festival')">
+
+Register
+
+</button>
+
+</div>
+
+<div class="event-card">
+
+<img src="https://media.istockphoto.com/id/1248915720/photo/farmers-hand-watering-a-young-plant.jpg?s=2048x2048&w=is&k=20&c=2p7cjp-BtJJmH9jIivrVybHfi2e6H5Mwfm4e52yHl0M=">
+
+<h3>Tree Plantation</h3>
+
+<p>Date : 25 July 2026</p>
+
+<p>Location : Pune</p>
+
+<button onclick="selectEvent('Tree Plantation')">
+
+Register
+
+</button>
+
+</div>
+
+<div class="event-card">
+
+<img src="https://www.shutterstock.com/image-vector/creative-professional-design-blood-drop-260nw-1969536496.jpg">
+
+<h3>Blood Donation Camp</h3>
+
+<p>Date : 30 July 2026</p>
+
+<p>Location : Nashik</p>
+
+<button onclick="selectEvent('Blood Donation Camp')">
+
+Register
+
+</button>
+
+</div>
+
+<div class="event-card">
+
+<img src="https://img.magnific.com/free-vector/programming-concept-it-education-student-writing-software-coding-application-java-script-it-project-digital-technology-development-website-interface-vector-illustration_613284-1712.jpg?semt=ais_hybrid&w=740&q=80">
+
+<h3>Coding Competition</h3>
+
+<p>Date : 5 August 2026</p>
+
+<p>Location : Pune</p>
+
+<button onclick="selectEvent('Coding Competition')">
+
+Register
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+<h2>About Portal</h2>
+
+<p>
+
+The Community Event Management Portal helps users
+
+discover community events,
+
+register online,
+
+and manage registrations easily.
+
+</p>
+
+</section>
+
+
+
+<section class="register" id="register">
+
+<h2>Register Event</h2>
+
+<form id="eventForm">
+
+<input
+
+type="text"
+
+id="name"
+
+placeholder="Full Name"
+
+required
+
+>
+
+<input
+
+type="email"
+
+id="email"
+
+placeholder="Email"
+
+required
+
+>
+
+<input
+
+type="text"
+
+id="phone"
+
+placeholder="Mobile Number"
+
+required
+
+>
+
+<input
+
+type="text"
+
+id="event"
+
+placeholder="Selected Event"
+
+readonly
+
+>
+
+<button type="submit">
+
+Submit Registration
+
+</button>
+
+</form>
+
+</section>
+
+
+<section class="list">
+
+<h2>My Registrations</h2>
+
+<div id="registrationList">
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input
+
+type="text"
+
+placeholder="Name"
+
+>
+
+<input
+
+type="email"
+
+placeholder="Email"
+
+>
+
+<textarea
+
+placeholder="Message"
+
+></textarea>
+
+<button>
+
+Send
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Community Event Management Portal
+
+Designed by Ashwini Rajdev
+
+</p>
+
+</footer>
+
+<script src="style.js"></script>
+
+</body>
+</html>
